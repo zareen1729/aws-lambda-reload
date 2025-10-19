@@ -1,0 +1,8 @@
+functions:
+  - name: my-dev-lambda
+    region: us-west-2
+    path: ./example_lambda
+    runtime: python3.9
+    retain_log_lines: 100
+poll_interval_seconds: 2
+zip_tmp_path: /tmp/lambda_live_reload
